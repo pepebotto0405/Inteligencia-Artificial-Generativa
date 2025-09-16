@@ -1,0 +1,123 @@
+/* Paleta de Toulouse Lautrec */
+:root {
+    --violeta: #440099;
+    --rosado: #EF426F;
+    --celeste: #00A9E0;
+    --amarillo: #F1C400;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --gris-claro: #F5F5F5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+header {
+    background: var(--violeta);
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background: var(--gris-claro);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+}
+
+h2 {
+    color: var(--violeta);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--violeta);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--rosado);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: var(--celeste);
+    color: var(--negro);
+}
+
+#output {
+    margin-top: 15px;
+    background: var(--blanco);
+    color: var(--negro);
+    border: 1px solid var(--violeta);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* VIDEO */
+.video {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

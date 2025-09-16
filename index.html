@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases de Fotografía – Toulouse Lautrec Mentoría</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://www.toulouselautrec.edu.pe/sites/default/files/logo/logo-principal%402x.png" 
+                 alt="Logo Toulouse Lautrec" class="logo">
+        </div>
+        <h1>Mentoría de Fotografía</h1>
+        <p>Para alumnos que necesitan refuerzo técnico y creativo</p>
+    </header>
+
+    <main>
+        <!-- FORMULARIO -->
+        <section class="solicitud">
+            <h2>Solicitar Clase Particular</h2>
+            <form id="claseForm">
+                <label for="alumno">Nombre del Alumno:</label>
+                <input type="text" id="alumno" name="alumno" required>
+
+                <label for="nivel">Nivel (Principiante / Intermedio / Avanzado):</label>
+                <select id="nivel" name="nivel" required>
+                    <option value="">Seleccione nivel</option>
+                    <option value="Principiante">Principiante</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+
+                <label for="especialidad">Especialidad de Fotografía:</label>
+                <select id="especialidad" name="especialidad" required>
+                    <option value="">Seleccione especialidad</option>
+                    <option value="Retrato">Retrato</option>
+                    <option value="Paisaje">Paisaje</option>
+                    <option value="Producto">Producto</option>
+                    <option value="Fotografía de moda">Moda</option>
+                    <option value="Arte / conceptual">Arte / Conceptual</option>
+                </select>
+
+                <label for="mensaje">¿Qué deseas reforzar o aprender?</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+
+        <!-- RESULTADO -->
+        <section class="resultado">
+            <h2>Solicitudes Recibidas</h2>
+            <div id="output"></div>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="video">
+            <h2>Clase de Ejemplo: Introducción a la Fotografía</h2>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/YtAhrbaN6sQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Toulouse Lautrec - Mentoría de Fotografía</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
